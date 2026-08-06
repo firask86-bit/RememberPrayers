@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>حافظوا — Hafizu</title>
+    <meta
+      name="description"
+      content="صفحات سياسة الخصوصية والدعم لتطبيق حافظوا (Hafizu)."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <nav class="nav" aria-label="التنقّل">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true"></span>
+          حافظوا
+        </a>
+        <div class="nav-links">
+          <a href="index.html" aria-current="page">الرئيسية</a>
+          <a href="privacy.html">الخصوصية</a>
+          <a href="support.html">الدعم</a>
+        </div>
+      </nav>
+
+      <header class="hero">
+        <span class="eyebrow">Hafizu</span>
+        <h1>مواقيتك وعباداتك في مكان واحد</h1>
+        <p class="lede">
+          هذه الصفحات الرسمية لسياسة الخصوصية والدعم لتطبيق
+          <strong>حافظوا</strong> على App Store وGoogle Play.
+        </p>
+      </header>
+
+      <section class="card">
+        <h2>روابط المتاجر</h2>
+        <p>
+          انسخ الروابط التالية إلى حقول Privacy Policy وSupport URL في App Store
+          Connect وGoogle Play Console بعد تفعيل GitHub Pages.
+        </p>
+        <ul>
+          <li>
+            سياسة الخصوصية:
+            <code>…/privacy.html</code>
+          </li>
+          <li>
+            الدعم:
+            <code>…/support.html</code>
+          </li>
+        </ul>
+        <div class="actions">
+          <a class="btn btn-primary" href="privacy.html">سياسة الخصوصية</a>
+          <a class="btn btn-ghost" href="support.html">صفحة الدعم</a>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>قبل النشر</h2>
+        <ul>
+          <li>
+            حدّث بريد التواصل في
+            <a href="support.html">صفحة الدعم</a>
+            و
+            <a href="privacy.html">سياسة الخصوصية</a>
+            إلى بريدك الحقيقي.
+          </li>
+          <li>ارفع مجلد <code>store-site</code> إلى GitHub وفعّل Pages.</li>
+        </ul>
+      </section>
+
+      <footer class="footer">
+        <span>© <span id="y"></span> حافظوا</span>
+        <span>
+          <a href="privacy.html">Privacy</a>
+          ·
+          <a href="support.html">Support</a>
+        </span>
+      </footer>
+    </div>
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

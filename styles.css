@@ -1,0 +1,281 @@
+/* حافظوا — store legal pages */
+:root {
+  --bg: #2b4854;
+  --bg-deep: #1b333d;
+  --bg-soft: #223d47;
+  --gold: #d8a94c;
+  --cream: #f4efe4;
+  --cream-muted: rgba(244, 239, 228, 0.72);
+  --cream-faint: rgba(244, 239, 228, 0.45);
+  --card: rgba(255, 255, 255, 0.06);
+  --line: rgba(244, 239, 228, 0.12);
+  --max: 720px;
+  --font: "Segoe UI", "Tahoma", "Arial", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font);
+  background:
+    radial-gradient(120% 80% at 50% 0%, #3c5f6d 0%, var(--bg) 42%, var(--bg-deep) 100%);
+  color: var(--cream);
+  line-height: 1.75;
+  direction: rtl;
+  text-align: right;
+}
+
+a {
+  color: var(--gold);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.wrap {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 28px 20px 64px;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 20px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid var(--line);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--cream);
+  font-weight: 700;
+  font-size: 1.15rem;
+  text-decoration: none;
+}
+
+.brand:hover {
+  text-decoration: none;
+  color: var(--cream);
+}
+
+.brand-mark {
+  width: 36px;
+  height: 36px;
+  border: 2px solid var(--gold);
+  border-radius: 10px 10px 4px 4px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.brand-mark::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 8px;
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  font-size: 0.92rem;
+}
+
+.nav-links a {
+  color: var(--cream-muted);
+}
+
+.nav-links a:hover,
+.nav-links a[aria-current="page"] {
+  color: var(--gold);
+}
+
+.hero {
+  margin-bottom: 28px;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+
+h1 {
+  margin: 0 0 10px;
+  font-size: clamp(1.6rem, 4vw, 2.1rem);
+  line-height: 1.35;
+  font-weight: 800;
+}
+
+.lede {
+  margin: 0;
+  color: var(--cream-muted);
+  font-size: 1.02rem;
+}
+
+.meta {
+  margin-top: 12px;
+  font-size: 0.85rem;
+  color: var(--cream-faint);
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 22px 20px;
+  margin-bottom: 16px;
+}
+
+.card h2 {
+  margin: 0 0 10px;
+  font-size: 1.15rem;
+  color: var(--cream);
+}
+
+.card p,
+.card li {
+  color: var(--cream-muted);
+  margin: 0 0 10px;
+}
+
+.card ul {
+  margin: 0 0 8px;
+  padding-inline-start: 1.2em;
+}
+
+.card li {
+  margin-bottom: 6px;
+}
+
+.card p:last-child,
+.card ul:last-child {
+  margin-bottom: 0;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--gold);
+  color: var(--bg-deep);
+}
+
+.btn-primary:hover {
+  filter: brightness(1.05);
+  color: var(--bg-deep);
+}
+
+.btn-ghost {
+  border-color: var(--line);
+  color: var(--cream);
+  background: transparent;
+}
+
+.btn-ghost:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.lang-block {
+  margin-top: 28px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+}
+
+.lang-block[dir="ltr"] {
+  direction: ltr;
+  text-align: left;
+}
+
+.lang-block h2 {
+  font-size: 1.05rem;
+  margin: 0 0 12px;
+  color: var(--gold);
+}
+
+.contact-box {
+  display: grid;
+  gap: 10px;
+}
+
+.contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  align-items: baseline;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.18);
+  border: 1px solid var(--line);
+}
+
+.contact-row strong {
+  color: var(--cream);
+  min-width: 7rem;
+}
+
+.footer {
+  margin-top: 40px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  font-size: 0.82rem;
+  color: var(--cream-faint);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  justify-content: space-between;
+}
+
+@media (max-width: 520px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
